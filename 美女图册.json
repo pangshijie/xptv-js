@@ -1,0 +1,48 @@
+{
+    "name": "美女图册",
+    "type": 12,
+    "api": "https://www.mntuce.com",
+    "categories": [
+    { "name": "XiuRen秀人网", "url": "/category/xiurenwang/page/{{page}}", "url2": "/category/xiurenwang" },
+    { "name": "XiaoYu语画界", "url": "/category/yuhuajie/page/{{page}}", "url2": "/category/yuhuajie" },
+    { "name": "HuaYang花漾", "url": "/category/huayang/page/{{page}}", "url2": "/category/huayang" },
+    { "name": "XINGYAN星颜社", "url": "/category/xingyanshe/page/{{page}}", "url2": "/category/xingyanshe" },
+    { "name": "FEILIN嗲囡囡", "url": "/category/feilin/page/{{page}}", "url2": "/category/feilin" },
+    { "name": "Imiss爱蜜社", "url": "/category/aimishe/page/{{page}}", "url2": "/category/aimishe" },
+    { "name": "BoLoli波萝社", "url": "/category/boluoshe/page/{{page}}", "url2": "/category/boluoshe" },
+    { "name": "YouWu尤物馆", "url": "/category/youwuguan/page/{{page}}", "url2": "/category/youwuguan" },
+    { "name": "UXING优星馆", "url": "/category/uxing/page/{{page}}", "url2": "/category/uxing" },
+    { "name": "WingS影私荟", "url": "/category/wings/page/{{page}}", "url2": "/category/wings" },
+    { "name": "LeYuan星乐园", "url": "/category/xingleyuan/page/{{page}}", "url2": "/category/xingleyuan" },
+    { "name": "MiiTao蜜桃社", "url": "/category/miitao/page/{{page}}", "url2": "/category/miitao" },
+    { "name": "Taste顽味生活", "url": "/category/taste/page/{{page}}", "url2": "/category/taste" },
+    { "name": "MiStar魅妍社", "url": "/category/meiyanshe/page/{{page}}", "url2": "/category/meiyanshe" },
+    { "name": "MyGirl美媛馆", "url": "/category/meiyuanguan/page/{{page}}", "url2": "/category/meiyuanguan" },
+    { "name": "糖果画报", "url": "/category/candyhuabao/page/{{page}}", "url2": "/category/candyhuabao" },
+    { "name": "HuaYan花の颜", "url": "/category/huayan/page/{{page}}", "url2": "/category/huayan" },
+    { "name": "MFStar模范学院", "url": "/category/mofanxueyuan/page/{{page}}", "url2": "/category/mofanxueyuan" },
+    { "name": "足控领域", "url": "/category/mzsock/page/{{page}}", "url2": "/category/mzsock" },
+    { "name": "清纯唯美", "url": "/category/yituyu/page/{{page}}", "url2": "/category/yituyu" }
+    ],
+    "search": {
+      "url": "/?s={{key}}&type=post",
+      "list": "main posts",
+      "author": ".item-tags a!0@text##\\#\\s*",
+      "rate": "h2 > a > span@text",
+      "tips": "item.icon-circle@text",
+      "coverUrl": "img@data-src",
+      "name": "h2 > a@text",
+      "detailUrl": "h2 > a@href"
+    },
+    "detail": {
+      "category": ".article-title > a > span@text"
+    },
+    "toc": {
+      "list": ".article-title a, a.post-page-numbers",
+      "name": "text##\\[.*##1",
+      "url": "href"
+    },
+    "content": {
+      "content": ".wp-block-image > img@src"
+    }
+  }
